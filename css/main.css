@@ -1,0 +1,62 @@
+/* class 는 점찍고 작명, 이름 중복 피하기,  */
+/* id vs class -> id는 보통 사용하지 않음 */
+.profile{
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.title
+{
+    text-align: center
+}
+
+.content {
+    text-align: center
+}
+
+.box {
+    width: 200px;
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    color: white;
+    box-shadow: 5px 5px black;
+
+}
+
+.container {
+    width : 800px;
+    
+}
+.header {
+    width: 100%;
+    height: 100px;
+    background: aquamarine;
+}
+
+.left-menu{
+    width: 20%;
+    height: 400px;
+    background: cornflowerblue;
+    /* float: left; */
+}
+
+.right{
+    width: 80%;
+    height: 400px;
+    background: coral;
+    /* float: left; */
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    /* clear: both; */
+}
