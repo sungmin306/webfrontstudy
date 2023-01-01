@@ -44,6 +44,7 @@
     width: 20%;
     height: 400px;
     background: cornflowerblue;
+    display: inline-block;
     /* float: left; */
 }
 
@@ -51,6 +52,9 @@
     width: 80%;
     height: 400px;
     background: coral;
+    display: inline-block;
+    /* 디프를레이 inline-blick = 어올림같으 느낌 띄어쓰기도 없애주는 귀찮음이 생김 혹은 font size 설정 근데 left 가 더 편한듯*/
+
     /* float: left; */
 }
 
