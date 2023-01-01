@@ -1,5 +1,5 @@
 /* class 는 점찍고 작명, 이름 중복 피하기,  */
-/* id vs class -> id는 보통 사용하지 않음 */
+/* id vs class -> id는 보통 사용하지 않음
 .profile{
     width: 100px;
     display: block;
@@ -28,39 +28,60 @@
     color: white;
     box-shadow: 5px 5px black;
 
-}
+} */
 
 .container {
     width : 800px;
+    /* 밑 2개 코드는 가운데 정렬 코드 */
+    margin-left: auto;
+    margin-right: auto;
     
 }
-.header {
+/* .header {
     width: 100%;
     height: 100px;
     background: aquamarine;
-}
+} */ 
 
 .left-menu{
-    width: 20%;
-    height: 400px;
-    background: cornflowerblue;
-    display: inline-block;
-    /* float: left; */
+    width: 80%;
+    height: 200px;
+    /* display: inline-block; */
+    float: left;
 }
 
 .right{
-    width: 80%;
-    height: 400px;
-    background: coral;
-    display: inline-block;
+    width: 20%;
+    height: 200px;
+    /* display: inline-block; */
     /* 디프를레이 inline-blick = 어올림같으 느낌 띄어쓰기도 없애주는 귀찮음이 생김 혹은 font size 설정 근데 left 가 더 편한듯*/
 
-    /* float: left; */
+    float: left;
 }
 
-.footer{
+.blog-profile{
+    width: 50px;
+    float: left;
+}
+
+.blog-name{
+    float : left;
+}
+
+/* 네브바 안에 있는 모든 li는 아래 하단에 있는 디자인을 가져라 라는 의미 space는 모든 자식 다 포함 >직계자식만 포함(내 바로 밑에 있는 애들) */
+.navbar li{
+    display: inline-block;
+}
+
+.navbar a{
+    font-size : 16px;
+    /* 아래코드는 밑줄제거 보라색도 없앨 수 있음 */
+    text-decoration: none;
+}
+
+/* .footer{
     width: 100%;
     height: 100px;
     background-color: grey;
-    /* clear: both; */
-}
+    clear: both;
+} */
