@@ -1,3 +1,8 @@
+@font-face {
+    font-family: '작명~~';
+    src : url()
+}
+
 div, input, textarea { /* class 명도 가능 */
     box-sizing: border-box; /* 실제 넓이 (padding, border 포함시키는것)*/
 }
@@ -117,4 +122,18 @@ body {
     padding: 10px;
     display: block;
     margin-left : auto;
+}
+
+
+.nav-container {
+    /* 이렇게 하면 가로배치 */
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 10px;
+    /* justify-content: center; 가운데 정렬 */
+}
+
+.nav-item {
+    margin-right: 10px;
 }

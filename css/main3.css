@@ -1,0 +1,85 @@
+td, th {
+
+}
+
+.cart-table td,.cart-table th {
+    padding: 15px;
+    border-bottom: 1px solid #c2d3de;
+}
+
+/* 밑에 cell-long 과 같은 의미 */
+.cart-table th:nth-child(2) {
+    width: 400px
+}
+
+.cart-background {
+    width: 100%;
+    background-color: #c2d3de;
+    padding: 30px;
+
+}
+
+.cart-table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    
+}
+
+.btn{
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: coral;
+    color: white;
+    cursor: pointer;
+}
+/* 순서가 중요함 hover->active->focus  */
+.btn:hover { /* 마우스를 버튼에 가져다댔을때 스타일 변경하는 법 hover */
+    background-color: chocolate;
+}
+.btn:active { /* 마우스 누를 때 스타일 변경*/
+    background-color: brown;
+    border: 2px solid black;
+}
+.btn:focus {
+    background-color: gray;
+}
+
+.custom-link {
+   text-decoration: none; 
+
+}
+
+.custom-link:link {
+    color: violet;
+
+}
+
+.custom-link:visited {
+    color: black;
+}
+
+.main-btn {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bg-red {
+    background: red;
+}
+
+.bg-blue {
+    background : blue;
+}
+
+/* .cell-long {
+    /* maxwidth 와 유사 */
+    /* width: 700px; */
+
+/* } */
