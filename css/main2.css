@@ -137,3 +137,111 @@ body {
 .nav-item {
     margin-right: 10px;
 }
+
+
+.product-container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    margin-top : 50px;
+    margin-bottom:50px;
+}
+.product-container div {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.product-container i {
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 20px;
+}
+/* one-way 애니메이션 만드는 step
+1.시작스타일 만들기
+2.최종스타일 만들기
+3.언제 최종스타일로 변하는지
+4.transition 으로 애니메이션
+ */
+.shop-bg {
+    background-color: #eee;
+    padding: 20px;
+}
+.shop-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.shop-item {
+    width: 33%;
+    padding: 10px;
+}
+
+.shop-item img {
+    width: 100%;
+    display: block;
+
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* 이것도 반투명 */
+    opacity: 0; /* 투명도 조절 가능 */
+    transition: all 1s; /* 스타일 변하면 1초에 걸쳐서 변경해라 이런의미 */
+    transition-timing-function: cubic-bezier(); /* transition 변경속도 설정 */
+}
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay-wrap:hover .overlay-black {
+    margin-top: 50%;
+}
+
+.overlay-black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    margin-top: 100%;
+    transition: all 1s;
+}
+
+
+
+/* media query 문법 ( 코드가 맨 아래에 있어야 잘 작동함) */
+/* 브라우저가 1200px 이하일 경우 적용 1200,992,768,576 보통 이렇게 단위로 나눔 */
+/* 너무 많으면 관리 힘들다. 3개 정도만 사용 추천 */
+@media screen and (max-width: 1200px){
+    .main-title {
+        font-size: 30px;
+    }
+    .product-container div{
+        width: 50%;
+    }
+    .product-container {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main-title {
+        font-size: 20px;
+    }
+    .product-container div{
+        width: 100%;
+    }
+}
